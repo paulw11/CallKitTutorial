@@ -16,7 +16,7 @@
 		BB33377C22254B8700711ED7 /* CallerData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB33377522254B8700711ED7 /* CallerData.framework */; };
 		BB33377D22254B8700711ED7 /* CallerData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB33377522254B8700711ED7 /* CallerData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB33378222254B9800711ED7 /* CallerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB33378122254B9800711ED7 /* CallerData.swift */; };
-		BB33378322254BBE00711ED7 /* CallKitDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB333706221BCECD00711ED7 /* CallKitDemo.xcdatamodeld */; };
+		BB33378322254BBE00711ED7 /* CallKitTutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB333706221BCECD00711ED7 /* CallKitTutorial.xcdatamodeld */; };
 		BB3337852226641300711ED7 /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3337842226641200711ED7 /* AddEditViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BB3336FC221BCECD00711ED7 /* CallKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB3336FC221BCECD00711ED7 /* CallKitTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallKitTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3336FF221BCECD00711ED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB333701221BCECD00711ED7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB333704221BCECD00711ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		BB333709221BCECF00711ED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB33370C221BCECF00711ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB33370E221BCECF00711ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB33375A221D62C400711ED7 /* CallKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallKitDemo.entitlements; sourceTree = "<group>"; };
+		BB33375A221D62C400711ED7 /* CallKitTutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallKitTutorial.entitlements; sourceTree = "<group>"; };
 		BB33377522254B8700711ED7 /* CallerData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CallerData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB33377722254B8700711ED7 /* CallerData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallerData.h; sourceTree = "<group>"; };
 		BB33377822254B8700711ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		BB3336F3221BCECD00711ED7 = {
 			isa = PBXGroup;
 			children = (
-				BB3336FE221BCECD00711ED7 /* CallKitDemo */,
+				BB3336FE221BCECD00711ED7 /* CallKitTutorial */,
 				BB33377622254B8700711ED7 /* CallerData */,
 				BB3336FD221BCECD00711ED7 /* Products */,
 			);
@@ -92,16 +92,16 @@
 		BB3336FD221BCECD00711ED7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB3336FC221BCECD00711ED7 /* CallKitDemo.app */,
+				BB3336FC221BCECD00711ED7 /* CallKitTutorial.app */,
 				BB33377522254B8700711ED7 /* CallerData.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BB3336FE221BCECD00711ED7 /* CallKitDemo */ = {
+		BB3336FE221BCECD00711ED7 /* CallKitTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				BB33375A221D62C400711ED7 /* CallKitDemo.entitlements */,
+				BB33375A221D62C400711ED7 /* CallKitTutorial.entitlements */,
 				BB3336FF221BCECD00711ED7 /* AppDelegate.swift */,
 				BB333701221BCECD00711ED7 /* ViewController.swift */,
 				BB333703221BCECD00711ED7 /* Main.storyboard */,
@@ -110,13 +110,13 @@
 				BB33370B221BCECF00711ED7 /* LaunchScreen.storyboard */,
 				BB33370E221BCECF00711ED7 /* Info.plist */,
 			);
-			path = CallKitDemo;
+			path = CallKitTutorial;
 			sourceTree = "<group>";
 		};
 		BB33377622254B8700711ED7 /* CallerData */ = {
 			isa = PBXGroup;
 			children = (
-				BB333706221BCECD00711ED7 /* CallKitDemo.xcdatamodeld */,
+				BB333706221BCECD00711ED7 /* CallKitTutorial.xcdatamodeld */,
 				BB33377722254B8700711ED7 /* CallerData.h */,
 				BB33377822254B8700711ED7 /* Info.plist */,
 				BB33378122254B9800711ED7 /* CallerData.swift */,
@@ -138,9 +138,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BB3336FB221BCECD00711ED7 /* CallKitDemo */ = {
+		BB3336FB221BCECD00711ED7 /* CallKitTutorial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB333711221BCECF00711ED7 /* Build configuration list for PBXNativeTarget "CallKitDemo" */;
+			buildConfigurationList = BB333711221BCECF00711ED7 /* Build configuration list for PBXNativeTarget "CallKitTutorial" */;
 			buildPhases = (
 				BB3336F8221BCECD00711ED7 /* Sources */,
 				BB3336F9221BCECD00711ED7 /* Frameworks */,
@@ -152,9 +152,9 @@
 			dependencies = (
 				BB33377B22254B8700711ED7 /* PBXTargetDependency */,
 			);
-			name = CallKitDemo;
+			name = CallKitTutorial;
 			productName = CallKitDemo;
-			productReference = BB3336FC221BCECD00711ED7 /* CallKitDemo.app */;
+			productReference = BB3336FC221BCECD00711ED7 /* CallKitTutorial.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BB33377422254B8700711ED7 /* CallerData */ = {
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BB3336F7221BCECD00711ED7 /* Build configuration list for PBXProject "CallKitDemo" */;
+			buildConfigurationList = BB3336F7221BCECD00711ED7 /* Build configuration list for PBXProject "CallKitTutorial" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,7 +212,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB3336FB221BCECD00711ED7 /* CallKitDemo */,
+				BB3336FB221BCECD00711ED7 /* CallKitTutorial */,
 				BB33377422254B8700711ED7 /* CallerData */,
 			);
 		};
@@ -254,7 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB33378222254B9800711ED7 /* CallerData.swift in Sources */,
-				BB33378322254BBE00711ED7 /* CallKitDemo.xcdatamodeld in Sources */,
+				BB33378322254BBE00711ED7 /* CallKitTutorial.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,16 +409,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CallKitDemo/CallKitDemo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CallKitTutorial/CallKitTutorial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UPP93EJ3U2;
-				INFOPLIST_FILE = CallKitDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CallKitTutorial/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.wilko.CallKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = me.wilko.CallKitTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -430,16 +430,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CallKitDemo/CallKitDemo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CallKitTutorial/CallKitTutorial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UPP93EJ3U2;
-				INFOPLIST_FILE = CallKitDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CallKitTutorial/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.wilko.CallKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = me.wilko.CallKitTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -508,7 +508,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BB3336F7221BCECD00711ED7 /* Build configuration list for PBXProject "CallKitDemo" */ = {
+		BB3336F7221BCECD00711ED7 /* Build configuration list for PBXProject "CallKitTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB33370F221BCECF00711ED7 /* Debug */,
@@ -517,7 +517,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB333711221BCECF00711ED7 /* Build configuration list for PBXNativeTarget "CallKitDemo" */ = {
+		BB333711221BCECF00711ED7 /* Build configuration list for PBXNativeTarget "CallKitTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB333712221BCECF00711ED7 /* Debug */,
@@ -538,13 +538,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BB333706221BCECD00711ED7 /* CallKitDemo.xcdatamodeld */ = {
+		BB333706221BCECD00711ED7 /* CallKitTutorial.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				BB333707221BCECD00711ED7 /* CallKitDemo.xcdatamodel */,
 			);
 			currentVersion = BB333707221BCECD00711ED7 /* CallKitDemo.xcdatamodel */;
-			path = CallKitDemo.xcdatamodeld;
+			path = CallKitTutorial.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

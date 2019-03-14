@@ -18,8 +18,8 @@ public final class CallerData {
     // MARK: - Core Data stack
     
     lazy var persistentContainer: NSPersistentContainer = {
-        let momdName = "CallKitDemo"
-        let groupName = "group.me.wilko.CallKitDemo"
+        let momdName = "CallKitTutorial"
+        let groupName = "group.me.wilko.CallKitTutorial"
         let fileName = "demo.sqlite"
         
         guard let modelURL = Bundle(for: type(of: self)).url(forResource: momdName, withExtension:"momd") else {
