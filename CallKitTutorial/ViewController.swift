@@ -58,8 +58,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func reloadTapped(_ sender: UIButton) {
-       
+        CXCallDirectoryManager.sharedInstance.reloadExtension(withIdentifier: "me.wilko.CallKitTutorial.CallKitTutorialExtension", completionHandler: { (error) in
+            if let error = error {
+                print("Error reloading extension: \(error.localizedDescription)")
+            }
+        })
+        
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -95,6 +101,19 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .delete:
+            if let caller = self.resultsController.fetchedObjects?[indexPath.row] {
+                caller.isRemoved = true
+                caller.updatedDate = Date()
+                self.callerData.saveContext()
+            }
+        default:
+            break
+        }
+    }
 }
 
 extension ViewController: NSFetchedResultsControllerDelegate {
@@ -119,6 +138,8 @@ extension ViewController: NSFetchedResultsControllerDelegate {
             
         case .update:
             self.tableView.reloadRows(at: [currentIndexPath!], with: .automatic)
+        @unknown default:
+            <#fatalError()#>
         }
     }
     
