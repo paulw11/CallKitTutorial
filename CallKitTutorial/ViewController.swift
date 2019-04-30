@@ -29,6 +29,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        
         self.loadData()
     }
     
@@ -138,8 +141,9 @@ extension ViewController: NSFetchedResultsControllerDelegate {
             
         case .update:
             self.tableView.reloadRows(at: [currentIndexPath!], with: .automatic)
+            
         @unknown default:
-            <#fatalError()#>
+            fatalError()
         }
     }
     
