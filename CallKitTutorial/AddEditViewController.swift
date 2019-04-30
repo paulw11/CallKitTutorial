@@ -27,7 +27,9 @@ class AddEditViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.callerName.delegate = self
+        self.callerNumber.delegate = self
+        self.title = ""
     }
     
     override func viewWillAppear(_ animated: Bool) {
