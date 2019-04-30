@@ -18,6 +18,9 @@
 		BB33378222254B9800711ED7 /* CallerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB33378122254B9800711ED7 /* CallerData.swift */; };
 		BB33378322254BBE00711ED7 /* CallKitTutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB333706221BCECD00711ED7 /* CallKitTutorial.xcdatamodeld */; };
 		BB3337852226641300711ED7 /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3337842226641200711ED7 /* AddEditViewController.swift */; };
+		BB4F9700223A3B280042DE6F /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F96FF223A3B280042DE6F /* CallDirectoryHandler.swift */; };
+		BB4F9704223A3B280042DE6F /* CallKitTutorialExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BB4F96FD223A3B280042DE6F /* CallKitTutorialExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BB4F970A223A3E8C0042DE6F /* CallerData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB33377522254B8700711ED7 /* CallerData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = BB33377422254B8700711ED7;
 			remoteInfo = CallerData;
+		};
+		BB4F9702223A3B280042DE6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB3336F4221BCECD00711ED7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB4F96FC223A3B280042DE6F;
+			remoteInfo = CallKitTutorialExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -42,9 +52,21 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB4F9708223A3B280042DE6F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BB4F9704223A3B280042DE6F /* CallKitTutorialExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BB28AFCD2255D34200AABC7C /* CallKitTutorialExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallKitTutorialExtension.entitlements; sourceTree = "<group>"; };
 		BB3336FC221BCECD00711ED7 /* CallKitTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallKitTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3336FF221BCECD00711ED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB333701221BCECD00711ED7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +81,9 @@
 		BB33377822254B8700711ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB33378122254B9800711ED7 /* CallerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallerData.swift; sourceTree = "<group>"; };
 		BB3337842226641200711ED7 /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
+		BB4F96FD223A3B280042DE6F /* CallKitTutorialExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallKitTutorialExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4F96FF223A3B280042DE6F /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		BB4F9701223A3B280042DE6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +102,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB4F96FA223A3B280042DE6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4F970A223A3E8C0042DE6F /* CallerData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,7 +118,9 @@
 			children = (
 				BB3336FE221BCECD00711ED7 /* CallKitTutorial */,
 				BB33377622254B8700711ED7 /* CallerData */,
+				BB4F96FE223A3B280042DE6F /* CallKitTutorialExtension */,
 				BB3336FD221BCECD00711ED7 /* Products */,
+				BB4F9709223A3E8C0042DE6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +129,7 @@
 			children = (
 				BB3336FC221BCECD00711ED7 /* CallKitTutorial.app */,
 				BB33377522254B8700711ED7 /* CallerData.framework */,
+				BB4F96FD223A3B280042DE6F /* CallKitTutorialExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +160,23 @@
 			path = CallerData;
 			sourceTree = "<group>";
 		};
+		BB4F96FE223A3B280042DE6F /* CallKitTutorialExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BB28AFCD2255D34200AABC7C /* CallKitTutorialExtension.entitlements */,
+				BB4F96FF223A3B280042DE6F /* CallDirectoryHandler.swift */,
+				BB4F9701223A3B280042DE6F /* Info.plist */,
+			);
+			path = CallKitTutorialExtension;
+			sourceTree = "<group>";
+		};
+		BB4F9709223A3E8C0042DE6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -146,11 +199,13 @@
 				BB3336F9221BCECD00711ED7 /* Frameworks */,
 				BB3336FA221BCECD00711ED7 /* Resources */,
 				BB33376C221D6A2000711ED7 /* Embed Frameworks */,
+				BB4F9708223A3B280042DE6F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				BB33377B22254B8700711ED7 /* PBXTargetDependency */,
+				BB4F9703223A3B280042DE6F /* PBXTargetDependency */,
 			);
 			name = CallKitTutorial;
 			productName = CallKitDemo;
@@ -175,6 +230,23 @@
 			productReference = BB33377522254B8700711ED7 /* CallerData.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		BB4F96FC223A3B280042DE6F /* CallKitTutorialExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4F9707223A3B280042DE6F /* Build configuration list for PBXNativeTarget "CallKitTutorialExtension" */;
+			buildPhases = (
+				BB4F96F9223A3B280042DE6F /* Sources */,
+				BB4F96FA223A3B280042DE6F /* Frameworks */,
+				BB4F96FB223A3B280042DE6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallKitTutorialExtension;
+			productName = CallKitTutorialExtension;
+			productReference = BB4F96FD223A3B280042DE6F /* CallKitTutorialExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -182,11 +254,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Paul Wilkinson";
 				TargetAttributes = {
 					BB3336FB221BCECD00711ED7 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -195,7 +268,16 @@
 					};
 					BB33377422254B8700711ED7 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
+					};
+					BB4F96FC223A3B280042DE6F = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -214,6 +296,7 @@
 			targets = (
 				BB3336FB221BCECD00711ED7 /* CallKitTutorial */,
 				BB33377422254B8700711ED7 /* CallerData */,
+				BB4F96FC223A3B280042DE6F /* CallKitTutorialExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -230,6 +313,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BB33377322254B8700711ED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4F96FB223A3B280042DE6F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,6 +348,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB4F96F9223A3B280042DE6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4F9700223A3B280042DE6F /* CallDirectoryHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +363,11 @@
 			isa = PBXTargetDependency;
 			target = BB33377422254B8700711ED7 /* CallerData */;
 			targetProxy = BB33377A22254B8700711ED7 /* PBXContainerItemProxy */;
+		};
+		BB4F9703223A3B280042DE6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB4F96FC223A3B280042DE6F /* CallKitTutorialExtension */;
+			targetProxy = BB4F9702223A3B280042DE6F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -420,7 +523,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.wilko.CallKitTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -441,7 +544,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.wilko.CallKitTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -469,7 +572,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -498,10 +601,50 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.wilko.CallerData;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB4F9705223A3B280042DE6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CallKitTutorialExtension/CallKitTutorialExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UPP93EJ3U2;
+				INFOPLIST_FILE = CallKitTutorialExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.wilko.CallKitTutorial.CallKitTutorialExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB4F9706223A3B280042DE6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CallKitTutorialExtension/CallKitTutorialExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UPP93EJ3U2;
+				INFOPLIST_FILE = CallKitTutorialExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.wilko.CallKitTutorial.CallKitTutorialExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -531,6 +674,15 @@
 			buildConfigurations = (
 				BB33377F22254B8700711ED7 /* Debug */,
 				BB33378022254B8700711ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4F9707223A3B280042DE6F /* Build configuration list for PBXNativeTarget "CallKitTutorialExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4F9705223A3B280042DE6F /* Debug */,
+				BB4F9706223A3B280042DE6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
