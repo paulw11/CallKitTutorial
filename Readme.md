@@ -5,8 +5,8 @@ CallKit also lets you add numbers to the phone block list and Caller ID lists.  
 
 The full tutorials can be found at:
 
-[CallKit extension for iOS - Part 1](https://pusher.com/tutorials/callkit-ios-part-1)
-[CallKit extension for iOS - Part 2](https://pusher.com/tutorials/callkit-ios-part-2)
+* [CallKit extension for iOS - Part 1](https://pusher.com/tutorials/callkit-ios-part-1)
+* [CallKit extension for iOS - Part 2](https://pusher.com/tutorials/callkit-ios-part-2)
 
 In this tutorial you will create:
 
