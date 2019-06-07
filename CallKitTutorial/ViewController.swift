@@ -76,8 +76,8 @@ class ViewController: UIViewController {
             dest.isBlocked = self.showBlocked
             dest.callerData = self.callerData
             if let cell = sender as? UITableViewCell,
-                let indexPath = tableView.indexPath(for: cell),
-                let caller = self.resultsController.fetchedObjects?[indexPath.row] {
+                let indexPath = tableView.indexPath(for: cell) {
+                let caller = self.resultsController.object(at: indexPath)
                 dest.caller = caller
             }
         }
@@ -96,7 +96,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CallerCell", for: indexPath)
-        let caller = self.resultsController.fetchedObjects![indexPath.row]
+        let caller = self.resultsController.object(at: indexPath)
         
         
         cell.textLabel?.text = caller.isBlocked ? String(caller.number) : caller.name ?? ""
@@ -108,11 +108,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         switch editingStyle {
         case .delete:
-            if let caller = self.resultsController.fetchedObjects?[indexPath.row] {
-                caller.isRemoved = true
-                caller.updatedDate = Date()
-                self.callerData.saveContext()
-            }
+            let caller = self.resultsController.object(at: indexPath)
+            caller.isRemoved = true
+            caller.updatedDate = Date()
+            self.callerData.saveContext()
         default:
             break
         }
